@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 // import bannerImg from "../../assets/banner.png";
-import bannerImg from "../../assets/banner.jpg"
+import bannerImg from "../../assets/banner.jpg";
 
 const HeroSection = () => {
   const [showModal, setShowModal] = useState(false);
@@ -41,7 +41,11 @@ const HeroSection = () => {
         {/* ------------------------ */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-end relative">
           <div className="relative group">
-          <img className="w-full sm:w-[30rem] h-[20rem]" src={bannerImg} alt="Banner Image" />
+            <img
+              className="w-full sm:w-[30rem] h-[20rem]"
+              src={bannerImg}
+              alt="Banner Image"
+            />
             <button
               onClick={openModal}
               className=" absolute inset-0 flex items-center justify-center rounded-md group-hover:opacity-80"
@@ -64,10 +68,10 @@ const HeroSection = () => {
               </div>
 
               <iframe
-                className=" w-full"
+                className="w-full"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/xyMhUfNZYEk?si=yciZE0E2uKsIRYkQ"
+                src="https://www.youtube.com/embed/-WIRJz5DbCk?si=Z6JUjHa_2Lrmr2zQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
