@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
-import bannerImg from "../../assets/banner.png";
+// import bannerImg from "../../assets/banner.png";
+import bannerImg from "../../assets/banner.jpg"
 
 const HeroSection = () => {
   const [showModal, setShowModal] = useState(false);
@@ -40,7 +41,7 @@ const HeroSection = () => {
         {/* ------------------------ */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-end relative">
           <div className="relative group">
-            <img src={bannerImg} alt="" />
+          <img className="w-full sm:w-[30rem] h-[20rem]" src={bannerImg} alt="Banner Image" />
             <button
               onClick={openModal}
               className=" absolute inset-0 flex items-center justify-center rounded-md group-hover:opacity-80"
